@@ -15,8 +15,8 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
 
-  OnSubmit(name:string,email:string){
-    this.quizService.insertParticipant(name,email).subscribe(
+  onSubmit(nome:string,email:string){
+    this.quizService.insertParticipant(nome,email).subscribe(
       (data : any) =>{
         localStorage.clear();
         localStorage.setItem('participant',JSON.stringify(data));
