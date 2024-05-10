@@ -13,6 +13,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {QuizService} from "./shared/quiz.service";
 import {AuthGuard} from "./auth/auth.guard";
+import { HomeComponent } from './home/home.component';
+import { QuestionComponent } from './question/question.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import {AuthGuard} from "./auth/auth.guard";
     NavbarComponent,
     RegisterComponent,
     QuizComponent,
-    ResultComponent
+    ResultComponent,
+    HomeComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,
